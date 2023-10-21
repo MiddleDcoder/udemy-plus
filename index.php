@@ -11,3 +11,9 @@
  * Text Domain:       udemy-plus
  * Domain Path:       /languages
  */
+
+ // Make sure we don't expose any info if called directly
+if(!function_exists('add_action')) {
+    echo 'Seems like you stumbled here by accident. 😛';
+    exit;
+}
